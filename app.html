@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zero-Factor Authentication</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="otp-popup" id="otpPopup"></div>
+  
+  <div class="auth-box" id="authBox">
+    <h2>Zero-Factor Authentication</h2>
+    <p>We have just sent you the code <strong class="otp">111111</strong> to your<br>
+    phone number xxx-xxx-3257.</p>
+    <p>Please enter the code below.</p>
+
+    <div class="code-inputs">
+      <input type="text" maxlength="1" autocomplete="off" />
+      <input type="text" maxlength="1" autocomplete="off" />
+      <input type="text" maxlength="1" autocomplete="off"/>
+      <input type="text" maxlength="1" autocomplete="off"/>
+      <input type="text" maxlength="1" autocomplete="off"/>
+      <input type="text" maxlength="1" autocomplete="off" />
+    </div>
+
+    <button onclick="verifyCode()">Verify Code</button>
+
+    <div class="resend">
+      Didn’t receive a code? <a>Resend</a><br/>
+      <a href="#">← Back to login</a>
+    </div>
+  </div>
+
+  <div class="success-box" id="successBox">
+    <div class="checkmark">✔</div>
+    <h2>Verification Successful!</h2>
+    <p>You have been successfully authenticated and can now access your account.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
